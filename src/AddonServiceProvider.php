@@ -16,7 +16,5 @@ class AddonServiceProvider extends ServiceProvider
         // Charge les vues à partir du dossier resources/views de votre package
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'ExportImport.Mypakage');
 
-        // Optionally, define routes or other resources for your package
-        $this->loadRoutesFrom(__DIR__.'/../../routes/backpack/custom.php');
     }
 }
