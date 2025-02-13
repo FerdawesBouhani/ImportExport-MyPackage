@@ -1,0 +1,45 @@
+{
+    "name": "export-import/mypakage",
+    "description": "a package for import and export model",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alpha",
+            "email": "ferdawesbouhani6@gmail.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/export-import/mypakage",
+    "keywords": [
+        "Laravel", "Backpack", "Backpack for Laravel", "Backpack Addon", "Mypakage"
+    ],
+    "require": {
+        "illuminate/support": "~8|~9",
+        "backpack/crud": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExportImport\\Mypakage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ExportImport\\Mypakage\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ExportImport\\Mypakage\\AddonServiceProvider",
+                "ExportImport\\Mypakage\\AutomaticServiceProvider"
+            ]
+        }
+    }
+}
