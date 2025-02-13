@@ -37,8 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ExportImport\\Mypakage\\AddonServiceProvider",
-                "ExportImport\\Mypakage\\AutomaticServiceProvider"
+                "ExportImport\\Mypakage\\AddonServiceProvider"
             ]
         }
     }
